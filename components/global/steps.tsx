@@ -25,7 +25,7 @@ const Steps = () => {
   ];
 
   return (
-    <div className='text-center py-14 bg-white relative overflow-hidden'>
+    <div className='text-center py-28 bg-white relative overflow-hidden'>
       <img
         src='/dash.svg'
         alt='dashed line'
@@ -39,7 +39,7 @@ const Steps = () => {
           En Trans-Express El Salvador, nos esforzamos para que comprar en
           Estados Unidos te resulte fácil, sencillo y seguro.
         </p>
-        <div className='flex flex-col md:flex-row justify-center items-center gap-40'>
+        <div className='flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-40'>
           {steps.map((step) => (
             <div
               key={step.number}
