@@ -12,12 +12,13 @@ import { Bell, BookOpen, Calculator, Info, MenuIcon, User } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Logo from './logo';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const pathname = usePathname();
 
@@ -45,10 +46,28 @@ export default function Navbar() {
     { href: '/alerts', label: 'Alerts', icon: <Bell className='w-5 h-5' /> },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <header
       className={cn(
-        'w-full z-40 bg-white transition-all duration-500 ease-in-out sticky top-0 left-0 right-0 shadow-[0_0_10px_rgba(0,0,0,0.1)]'
+        'w-full z-40 bg-white transition-all duration-500 ease-in-out ',
+        scrolled
+          ? 'sticky top-0 left-0 right-0 shadow-[0_0_10px_rgba(0,0,0,0.1)]'
+          : ''
       )}
     >
       <div className='w-full max-w-[1850px] mx-auto flex h-[90px] items-center px-4 md:px-6'>
@@ -68,14 +87,14 @@ export default function Navbar() {
             <SheetHeader className='mb-10'>
               <Logo />
             </SheetHeader>
-            <div className='grid gap-6 py-6'>
+            <div className='grid gap-4 py-6'>
               {menuItems.map((item, i) => (
                 <div
                   key={i}
                   className={cn(
-                    'flex items-center gap-2 text-sm',
+                    'flex items-center gap-2 text-sm hover:bg-primary hover:text-white rounded-md px-3 py-1.5 transition-all duration-300',
                     pathname === item.href
-                      ? 'text-white bg-primary rounded-md px-3 py-1.5'
+                      ? 'text-white bg-primary'
                       : 'font-semibold'
                   )}
                 >
@@ -87,14 +106,14 @@ export default function Navbar() {
           </SheetContent>
         </Sheet>
 
-        <nav className='ml-auto hidden md:flex items-center gap-6 lg:gap-12'>
+        <nav className='ml-auto hidden md:flex items-center gap-2 lg:gap-6'>
           {menuItems.map((item, i) => (
             <div
               key={i}
               className={cn(
-                'flex items-center gap-2 text-xs lg:text-sm',
+                'flex items-center gap-2 text-xs lg:text-sm hover:bg-primary hover:text-white rounded-full px-3 py-1.5 transition-all duration-300 cursor-pointer',
                 pathname === item.href
-                  ? 'text-white bg-primary rounded-full px-3 py-1.5'
+                  ? 'text-white bg-primary'
                   : 'font-semibold'
               )}
             >
