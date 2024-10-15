@@ -65,9 +65,7 @@ export default function Navbar() {
     <header
       className={cn(
         'w-full z-40 bg-white transition-all duration-500 ease-in-out ',
-        scrolled
-          ? 'sticky top-0 left-0 right-0 shadow-[0_0_10px_rgba(0,0,0,0.1)]'
-          : ''
+        scrolled ? 'sticky top-0 left-0 right-0 border-b border-gray-200' : ''
       )}
     >
       <div className='w-full max-w-[1850px] mx-auto flex h-[90px] items-center px-4 md:px-6'>

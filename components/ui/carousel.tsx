@@ -287,9 +287,9 @@ const CarouselButton = React.forwardRef<
         {...props}
       >
         {isPrev ? (
-          <ChevronLeft className='h-6 w-6' />
+          <ChevronLeft className='h-4 w-4 sm:h-6 sm:w-6' />
         ) : (
-          <ChevronRight className='h-6 w-6' />
+          <ChevronRight className='h-4 w-4 sm:h-6 sm:w-6' />
         )}
         <span className='sr-only'>
           {isPrev ? 'Previous slide' : 'Next slide'}

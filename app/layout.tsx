@@ -28,7 +28,7 @@ export default async function RootLayout({
   return (
     <html lang='en'>
       <body className={`${poppins.className}`}>
-        <div className=''>
+        <div className='max-w-screen-3xl mx-auto'>
           <Navbar />
 
           {children}
