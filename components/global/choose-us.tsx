@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 
 const ChooseUs = () => {
   return (
-    <div id='why-us' className='bg-white py-[60px] px-4 md:px-0'>
+    <div id='why-us' className='bg-white py-[60px] px-4 md:px-0 2lg:-mb-16'>
       <div className='max-w-screen-3xl mx-auto'>
         <div className='flex flex-col gap-2 justify-center items-center text-center relative mb-10'>
           <div className='absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[40px] md:text-[80px] 3xl:text-[150px] font-bold text-gray-300 opacity-20 whitespace-nowrap'>
