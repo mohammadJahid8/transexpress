@@ -4,7 +4,6 @@ import Services from '@/components/global/services';
 import ChooseUs from '@/components/global/choose-us';
 import Faqs from '@/components/global/faq';
 import Subscribe from '@/components/global/subscribe';
-import Footer from '@/components/global/footer';
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
         <ChooseUs />
         <Faqs />
         <Subscribe />
-        <Footer />
       </div>
     </div>
   );
