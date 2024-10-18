@@ -64,11 +64,11 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        'w-full z-40 bg-white transition-all duration-500 ease-in-out ',
+        'w-full z-40 bg-white transition-all duration-500 ease-in-out',
         scrolled ? 'sticky top-0 left-0 right-0 border-b border-gray-200' : ''
       )}
     >
-      <div className='w-full max-w-[1850px] mx-auto flex h-[90px] items-center px-4 md:px-6'>
+      <div className='w-full flex h-[90px] items-center px-4 md:px-6 lg:px-10 3xl:px-0 max-w-screen-3xl mx-auto'>
         <Link href='/' className='flex mr-auto' prefetch={false}>
           <Logo />
         </Link>

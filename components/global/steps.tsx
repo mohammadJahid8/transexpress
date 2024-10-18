@@ -25,13 +25,13 @@ const Steps = () => {
   ];
 
   return (
-    <div className='text-center py-28 bg-white relative overflow-hidden'>
+    <div className='text-center px-4 lg:px-0 py-28 bg-white relative overflow-hidden'>
       <img
         src='/dash.svg'
         alt='dashed line'
-        className='absolute inset-0 w-full h-full object-cover hidden md:block'
+        className='absolute inset-0 w-full h-full object-cover hidden md:block '
       />
-      <div className='relative z-10 flex flex-col items-center gap-4'>
+      <div className='relative z-10 flex flex-col items-center gap-4 max-w-screen-3xl mx-auto'>
         <h2 className='text-2xl md:text-3xl font-bold text-primary'>
           Utilizar tu casillero es bien fácil
         </h2>
@@ -39,11 +39,11 @@ const Steps = () => {
           En Trans-Express El Salvador, nos esforzamos para que comprar en
           Estados Unidos te resulte fácil, sencillo y seguro.
         </p>
-        <div className='flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-40'>
+        <div className='flex flex-col md:flex-row justify-center items-center gap-4 gap-y-20 lg:gap-40'>
           {steps.map((step) => (
             <div
               key={step.number}
-              className='w-64 rounded-lg bg-[#f9fafc] flex-col items-center justify-center pt-10 pb-8 px-5 relative'
+              className='w-full lg:w-64 rounded-lg bg-[#f9fafc] flex-col items-center justify-center pt-10 pb-8 px-5 relative'
             >
               <div className='flex justify-center absolute inset-x-0 -top-7'>
                 <div className='flex items-center justify-center bg-orange-400 bg-opacity-20 h-14 w-14 rounded-full'>

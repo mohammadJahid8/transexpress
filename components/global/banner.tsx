@@ -19,7 +19,7 @@ const Banner = () => {
   ];
 
   return (
-    <div className='w-full'>
+    <div className='w-full max-w-screen-3xl mx-auto'>
       <Carousel
         className='w-full relative '
         opts={{
