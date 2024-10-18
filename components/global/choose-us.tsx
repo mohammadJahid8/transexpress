@@ -9,14 +9,14 @@ const ChooseUs = () => {
           <div className='absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[40px] md:text-[80px] 3xl:text-[150px] font-bold text-gray-300 opacity-20 whitespace-nowrap'>
             Why Choose Us
           </div>
-          <h1
+          <h4
             className={cn(
               'text-sm text-primary inline-flex gap-2 items-center uppercase font-semibold relative z-10'
             )}
           >
             <img src='/subtitle.svg' alt='Fast Forward' />
             Why Choose Us
-          </h1>
+          </h4>
           <h1 className='text-[32px] 3xl:text-[52px] font-medium text-[#15161c] relative z-10'>
             High Quality Innovate Design
           </h1>

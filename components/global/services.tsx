@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import { BellIcon, BoxIcon, CalculatorIcon } from 'lucide-react';
 import React from 'react';
 
@@ -28,11 +29,19 @@ const Services = () => {
 
   return (
     <div className='text-center px-4 lg:px-0 py-20 my-0 lg:my-20 bg-gray-100'>
-      <h2 className='text-xl font-bold text-secondary'>CAPTION</h2>
-      <p className='text-2xl font-bold mt-2'>
+      <h4
+        className={cn(
+          'text-sm text-primary inline-flex gap-2 items-center uppercase font-semibold relative z-10'
+        )}
+      >
+        <img src='/subtitle.svg' alt='Fast Forward' />
+        Services
+      </h4>
+      <h1 className='text-[32px] font-medium text-[#15161c] relative z-10 max-w-[900px] mx-auto'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet
         at molestie mattis.
-      </p>
+      </h1>
+
       <div className='flex flex-col md:flex-row justify-center mt-8 gap-8'>
         {services.map((service, index) => (
           <div

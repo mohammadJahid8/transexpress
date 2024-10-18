@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
 
+import { cn } from '@/lib/utils';
 import FaqAccordion from './faq-accordion';
 
 const Faqs = () => {
@@ -11,10 +12,17 @@ const Faqs = () => {
     >
       <div className='max-w-[1200px] mx-auto'>
         <div className='flex flex-col gap-2 justify-center items-center text-center pb-12'>
-          <h2 className='text-xl font-bold text-secondary'>FAQ</h2>
-          <p className='text-2xl font-bold mt-2'>
+          <h4
+            className={cn(
+              'text-sm text-primary inline-flex gap-2 items-center uppercase font-semibold relative z-10'
+            )}
+          >
+            <img src='/subtitle.svg' alt='Fast Forward' />
+            FAQs
+          </h4>
+          <h1 className='text-[32px] font-medium text-[#15161c] relative z-10 max-w-[900px] mx-auto'>
             Your Queries Answered, All in One Place
-          </p>
+          </h1>
         </div>
 
         <div className='flex lg:flex-row flex-col items-start gap-10 max-w-xl lg:max-w-none mx-auto'>
