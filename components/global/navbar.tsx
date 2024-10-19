@@ -39,7 +39,7 @@ export default function Navbar() {
       icon: <Calculator className='w-5 h-5' />,
     },
     {
-      href: '/about-us',
+      href: '/about',
       label: 'About Us',
       icon: <Info className='w-5 h-5' />,
     },
