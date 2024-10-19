@@ -57,12 +57,12 @@ const Calculator = () => {
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectLabel>Fruits</SelectLabel>
-                  <SelectItem value='apple'>Apple</SelectItem>
-                  <SelectItem value='banana'>Banana</SelectItem>
-                  <SelectItem value='blueberry'>Blueberry</SelectItem>
-                  <SelectItem value='grapes'>Grapes</SelectItem>
-                  <SelectItem value='pineapple'>Pineapple</SelectItem>
+                  <SelectLabel>Ciudades</SelectLabel>
+                  <SelectItem value='apple'>Option 1</SelectItem>
+                  <SelectItem value='banana'>Option 2</SelectItem>
+                  <SelectItem value='blueberry'>Option 3</SelectItem>
+                  <SelectItem value='grapes'>Option 4</SelectItem>
+                  <SelectItem value='pineapple'>Option 5</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -77,12 +77,12 @@ const Calculator = () => {
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectLabel>Fruits</SelectLabel>
-                  <SelectItem value='apple'>Apple</SelectItem>
-                  <SelectItem value='banana'>Banana</SelectItem>
-                  <SelectItem value='blueberry'>Blueberry</SelectItem>
-                  <SelectItem value='grapes'>Grapes</SelectItem>
-                  <SelectItem value='pineapple'>Pineapple</SelectItem>
+                  <SelectLabel>Tipo de mercadería</SelectLabel>
+                  <SelectItem value='apple'>Option 1</SelectItem>
+                  <SelectItem value='banana'>Option 2</SelectItem>
+                  <SelectItem value='blueberry'>Option 3</SelectItem>
+                  <SelectItem value='grapes'>Option 4</SelectItem>
+                  <SelectItem value='pineapple'>Option 5</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>

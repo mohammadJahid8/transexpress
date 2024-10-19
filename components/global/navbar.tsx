@@ -24,7 +24,7 @@ export default function Navbar() {
 
   const menuItems = [
     {
-      href: '/casillero',
+      href: '/account',
       label: 'Account',
       icon: <User className='w-5 h-5' />,
     },

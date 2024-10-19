@@ -1,24 +1,15 @@
-/* eslint-disable react/no-unescaped-entities */
 'use client';
-import { useState } from 'react';
+
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Upload } from 'lucide-react';
-import ReCAPTCHA from 'react-google-recaptcha';
 import Captcha from '@/components/global/captcha';
+import ImageUpload from '@/components/global/upload';
 
 export default function AlertPage() {
-  const [file, setFile] = useState(null);
+  // const [image, setImage] = useState(null);
 
   const onChange = () => {};
-
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedFile = event.target.files?.[0];
-    if (selectedFile) {
-      setFile(URL.createObjectURL(selectedFile) as unknown as null);
-    }
-  };
 
   return (
     <div className='w-full max-w-5xl mx-auto p-4 md:p-6 my-4 md:my-10 bg-white md:rounded-lg md:shadow'>
@@ -79,27 +70,9 @@ export default function AlertPage() {
             </li>
           </ul>
 
-          <label htmlFor='licenseFile' className='relative cursor-pointer'>
-            <div className='flex flex-col items-center justify-center border border-dashed border-gray-300 rounded-[12px] p-4 bg-white h-22'>
-              <div className='flex flex-col items-center gap-2.5'>
-                <Upload className='w-6 h-6' />
-                <span className='text-sm text-gray-500'>
-                  Haz clic o arrastra un archivo a este área para subirlo.
-                </span>
-              </div>
-              <Input
-                type='file'
-                className='hidden'
-                id='licenseFile'
-                onChange={handleFileChange}
-              />
-            </div>
-          </label>
-          {file && (
-            <div className='mt-2'>
-              <img src={file} alt='Preview' className='max-w-52 h-auto' />
-            </div>
-          )}
+          <ImageUpload
+          // setImage={setImage}
+          />
         </div>
         <div>
           <div className='flex items-center justify-start space-x-2'>
