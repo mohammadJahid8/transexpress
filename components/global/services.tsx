@@ -1,28 +1,29 @@
 import { cn } from '@/lib/utils';
 import { BellIcon, BoxIcon, CalculatorIcon } from 'lucide-react';
+import Link from 'next/link';
 import React from 'react';
 
 const Services = () => {
   const services = [
     {
+      id: 1,
       title: 'New Calculator',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-      link: '#',
       icon: <CalculatorIcon className='w-8 h-8' />,
     },
     {
+      id: 2,
       title: 'Pro Box Locker',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-      link: '#',
       icon: <BoxIcon className='w-8 h-8' />,
     },
     {
+      id: 3,
       title: 'Pre Alert Your Packages',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-      link: '#',
       icon: <BellIcon className='w-8 h-8' />,
     },
   ];
@@ -53,12 +54,12 @@ const Services = () => {
             </div>
             <h3 className='text-lg font-bold text-blue-900'>{service.title}</h3>
             <p className='text-sm text-gray-600 mt-2'>{service.description}</p>
-            <a
-              href={service.link}
+            <Link
+              href={`/services/${service.id}`}
               className='text-sm text-white bg-primary mt-4 inline-block px-4 py-2 rounded'
             >
               Read More →
-            </a>
+            </Link>
           </div>
         ))}
       </div>
