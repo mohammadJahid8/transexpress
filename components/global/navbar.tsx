@@ -87,8 +87,9 @@ export default function Navbar() {
             </SheetHeader>
             <div className='grid gap-4 py-6'>
               {menuItems.map((item, i) => (
-                <div
+                <Link
                   key={i}
+                  href={item.href}
                   className={cn(
                     'flex items-center gap-2 text-sm hover:bg-primary hover:text-white rounded-md px-3 py-1.5 transition-all duration-300',
                     pathname === item.href
@@ -97,8 +98,8 @@ export default function Navbar() {
                   )}
                 >
                   {item.icon}
-                  <Link href={item.href}>{item.label}</Link>
-                </div>
+                  <span>{item.label}</span>
+                </Link>
               ))}
             </div>
           </SheetContent>
@@ -106,8 +107,9 @@ export default function Navbar() {
 
         <nav className='ml-auto hidden md:flex items-center gap-2 lg:gap-6'>
           {menuItems.map((item, i) => (
-            <div
+            <Link
               key={i}
+              href={item.href}
               className={cn(
                 'flex items-center gap-2 text-xs lg:text-sm hover:bg-primary hover:text-white rounded-full px-3 py-1.5 transition-all duration-300 cursor-pointer',
                 pathname === item.href
@@ -116,8 +118,8 @@ export default function Navbar() {
               )}
             >
               {item.icon}
-              <Link href={item.href}>{item.label}</Link>
-            </div>
+              <span>{item.label}</span>
+            </Link>
           ))}
         </nav>
       </div>
