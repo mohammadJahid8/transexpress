@@ -4,8 +4,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
   CarouselButton,
 } from '@/components/ui/carousel';
 import AutoPlay from 'embla-carousel-autoplay';
