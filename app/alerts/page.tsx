@@ -12,7 +12,7 @@ export default function AlertPage() {
   const onChange = () => {};
 
   return (
-    <div className='w-full max-w-5xl mx-auto p-4 md:p-6 my-4 md:my-10 bg-white md:rounded-lg md:shadow'>
+    <div className='w-full max-w-5xl mx-auto p-4 md:p-6 my-4 md:my-10 bg-[#d4d9ed] md:rounded-lg md:shadow'>
       <h1 className='text-2xl font-semibold mb-6 text-center text-gray-800'>
         Llena los datos solicitados en este formulario...
       </h1>

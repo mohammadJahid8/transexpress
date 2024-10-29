@@ -26,11 +26,6 @@ const Steps = () => {
 
   return (
     <div className='text-center px-4 lg:px-0 py-28 bg-white relative overflow-hidden'>
-      <img
-        src='/dash.svg'
-        alt='dashed line'
-        className='absolute inset-0 w-full h-full object-cover hidden md:block '
-      />
       <div className='relative z-10 flex flex-col items-center gap-4 max-w-screen-3xl mx-auto'>
         <h2 className='text-2xl md:text-3xl font-bold text-primary'>
           Utilizar tu casillero es bien fácil
@@ -45,11 +40,9 @@ const Steps = () => {
               key={step.number}
               className='w-full lg:w-64 rounded-lg bg-[#f9fafc] flex-col items-center justify-center pt-10 pb-8 px-5 relative'
             >
-              <div className='flex justify-center absolute inset-x-0 -top-7'>
-                <div className='flex items-center justify-center bg-orange-400 bg-opacity-20 h-14 w-14 rounded-full'>
-                  <div className='h-10 w-10 bg-orange-400 rounded-full flex items-center justify-center text-white font-semibold mx-auto text-2xl border-4 border-orange-400 border-opacity-20'>
-                    {step.number}
-                  </div>
+              <div className='flex justify-center absolute inset-x-0 -top-6'>
+                <div className='h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold mx-auto text-2xl border-4 border-primary border-opacity-20'>
+                  {step.number}
                 </div>
               </div>
               <div>

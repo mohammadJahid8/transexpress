@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 
-const Logo = () => {
+const Logo = ({ url = '/transexpress.png' }: { url?: string }) => {
   return (
     <img
-      src='/transexpress.png'
+      src={url}
       className='w-[160px] lg:w-[220px] h-[40px] lg:h-[60px]'
       alt='logo'
     />

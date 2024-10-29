@@ -22,9 +22,9 @@ const ChooseUs = () => {
           </h1>
         </div>
 
-        <div className='relative flex items-center md:justify-center'>
+        <div className='relative flex items-center md:justify-center 2lg:mb-16'>
           <div className='flex flex-col 2lg:flex-row 2lg:items-center gap-14 2lg:gap-[40px] xl:gap-[100px] max-w-[1200px] xl:max-w-[1300px] mx-auto'>
-            <div className='relative z-10 flex flex-col items-start 2lg:items-end gap-14  2lg:mt-[100px]'>
+            <div className='relative z-10 flex flex-col items-start 2lg:items-end gap-14'>
               <Features
                 icon={'/why-icon1.svg'}
                 label='Technology'
@@ -46,12 +46,12 @@ const ChooseUs = () => {
             </div>
 
             <div className='relative hidden 2lg:block z-[1] order-last 2lg:order-none'>
-              <div className='2lg:w-[350px] pt-[80px] mx-auto'>
+              {/* <div className='2lg:w-[350px] pt-[80px] mx-auto'>
                 <img src='/why.png' alt='Why choose us Image' className='' />
-              </div>
+              </div> */}
             </div>
 
-            <div className='relative z-10 flex flex-col gap-14 items-start  2lg:mt-[100px]'>
+            <div className='relative z-10 flex flex-col gap-14 items-start'>
               <Features
                 icon={'/why-icon4.svg'}
                 label='Trusted Clients'

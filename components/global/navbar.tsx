@@ -68,7 +68,7 @@ export default function Navbar() {
         scrolled ? 'sticky top-0 left-0 right-0 border-b border-gray-200' : ''
       )}
     >
-      <div className='w-full flex h-[90px] items-center px-4 md:px-6 lg:px-10 3xl:px-0 max-w-screen-3xl mx-auto'>
+      <div className='w-full flex h-[90px] items-center px-4 md:px-6 lg:px-10'>
         <Link href='/' className='flex mr-auto' prefetch={false}>
           <Logo />
         </Link>
