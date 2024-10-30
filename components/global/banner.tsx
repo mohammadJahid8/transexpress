@@ -5,6 +5,7 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselButton,
+  CarouselDots,
 } from '@/components/ui/carousel';
 import AutoPlay from 'embla-carousel-autoplay';
 
@@ -49,6 +50,8 @@ const Banner = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+
+        <CarouselDots />
       </Carousel>
     </div>
   );

@@ -26,24 +26,20 @@ export default function Navbar() {
     {
       href: '/account',
       label: 'Account',
-      icon: <User className='w-5 h-5' />,
     },
     {
       href: '/services',
       label: 'Services',
-      icon: <BookOpen className='w-5 h-5' />,
     },
     {
       href: '/calculator',
       label: 'Calculator',
-      icon: <Calculator className='w-5 h-5' />,
     },
     {
       href: '/about',
       label: 'About Us',
-      icon: <Info className='w-5 h-5' />,
     },
-    { href: '/alerts', label: 'Alerts', icon: <Bell className='w-5 h-5' /> },
+    { href: '/alerts', label: 'Alerts' },
   ];
 
   useEffect(() => {
@@ -91,13 +87,12 @@ export default function Navbar() {
                   key={i}
                   href={item.href}
                   className={cn(
-                    'flex items-center gap-2 text-sm hover:bg-primary hover:text-white rounded-md px-3 py-1.5 transition-all duration-300',
+                    'text-sm hover:bg-primary hover:text-white rounded-md px-3 py-1.5 transition-all duration-300',
                     pathname === item.href
                       ? 'text-white bg-primary'
                       : 'font-semibold'
                   )}
                 >
-                  {item.icon}
                   <span>{item.label}</span>
                 </Link>
               ))}
@@ -111,13 +106,12 @@ export default function Navbar() {
               key={i}
               href={item.href}
               className={cn(
-                'flex items-center gap-2 text-xs lg:text-sm hover:bg-primary hover:text-white rounded-full px-3 py-1.5 transition-all duration-300 cursor-pointer',
+                'text-sm lg:text-base hover:bg-primary hover:text-white rounded-full px-3 py-1.5 transition-all duration-300 cursor-pointer',
                 pathname === item.href
                   ? 'text-white bg-primary'
                   : 'font-semibold'
               )}
             >
-              {item.icon}
               <span>{item.label}</span>
             </Link>
           ))}

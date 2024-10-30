@@ -305,7 +305,7 @@ const CarouselDots: React.FC = () => {
   const { api } = useCarousel() as { api: any };
   const [selectedIndex, setSelectedIndex] = React.useState<number>(0);
   const [scrollSnaps, setScrollSnaps] = React.useState<number[]>([]);
-  const chunkSize = 3; // Set the chunk size that each dot will represent
+  const chunkSize = 1; // Set the chunk size that each dot will represent
 
   React.useEffect(() => {
     if (!api) return;
@@ -332,7 +332,7 @@ const CarouselDots: React.FC = () => {
   };
 
   return (
-    <div className='absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2 pb-5'>
+    <div className='absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-4 pb-5'>
       {Array.from({ length: numberOfDots }).map((_, dotIndex) => {
         const { startIndex, endIndex } = getDotIndexRange(dotIndex);
         const isActive =
@@ -341,7 +341,7 @@ const CarouselDots: React.FC = () => {
         return (
           <button
             key={dotIndex}
-            className={`w-4 sm:w-10 h-1 ${
+            className={`w-1.5 h-1.5 p-1.5 rounded-full ${
               isActive ? 'bg-primary' : 'bg-[#D1DFDD]'
             }`}
             onClick={() => api.scrollTo(startIndex)}
