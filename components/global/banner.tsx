@@ -31,7 +31,7 @@ const Banner = () => {
         }}
         plugins={[AutoPlay({ delay: 2000 })]}
       >
-        {!isMobile && (
+        {/* {!isMobile && (
           <div className='flex gap-2 absolute top-[20%] sm:top-14 -translate-y-1/2 left-2 sm:left-4 z-30'>
             <CarouselButton
               direction='prev'
@@ -42,7 +42,7 @@ const Banner = () => {
               className='bg-accent/50 border-none rounded-sm h-6 w-6 sm:h-10 sm:w-10 text-primary-foreground transition-colors hover:bg-accent/75 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring'
             />
           </div>
-        )}
+        )} */}
         <CarouselContent className=''>
           {isMobile
             ? mobileImages.map((image, index) => (
