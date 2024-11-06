@@ -6,20 +6,20 @@ const Steps = () => {
   const steps = [
     {
       number: 1,
-      title: 'Escoge tu producto',
-      description: 'Entra a la tienda favorita y escoge todos tus productos.',
+      title: 'Manda tu informacion',
+      description: 'Recibiras tu direccion para pedir de todo el mundo',
       icon: '/step1.svg',
     },
     {
       number: 2,
-      title: 'Completa tu dirección',
-      description: 'Ingresa tu casillero de Trans-Express en el checkout.',
+      title: 'Pide tu producto',
+      description: 'Escoge tus productos de cualquier tienda',
       icon: '/step2.svg',
     },
     {
       number: 3,
-      title: 'Recibe tus paquetes',
-      description: 'Recibe en tu casa en El Salvador. Fácil y seguro.',
+      title: 'Disfruta tu pedido',
+      description: 'Recibe lo que pidas sin salir de casa',
       icon: '/step3.svg',
     },
   ];
@@ -28,11 +28,10 @@ const Steps = () => {
     <div className='text-center px-4 lg:px-0 py-28 bg-white relative overflow-hidden'>
       <div className='relative z-10 flex flex-col items-center gap-4 max-w-screen-3xl mx-auto'>
         <h2 className='text-2xl md:text-3xl font-bold text-primary'>
-          Utilizar tu casillero es bien fácil
+          Crear tu casillero en tres pasos
         </h2>
         <p className='text-gray-600 mb-12 max-w-xl mx-auto'>
-          En Trans-Express El Salvador, nos esforzamos para que comprar en
-          Estados Unidos te resulte fácil, sencillo y seguro.
+          Pedir de cualquier lado del mundo nunca fue tan facil y sencillo.
         </p>
         <div className='flex flex-col md:flex-row justify-center items-center gap-4 gap-y-20 lg:gap-40'>
           {steps.map((step) => (

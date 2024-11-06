@@ -12,16 +12,16 @@ const Faqs = () => {
     >
       <div className='max-w-[1200px] mx-auto'>
         <div className='flex flex-col gap-2 justify-center items-center text-center pb-12'>
-          <h4
+          {/* <h4
             className={cn(
               'text-sm text-primary inline-flex gap-2 items-center uppercase font-semibold relative z-10'
             )}
           >
             <img src='/subtitle.svg' alt='Fast Forward' />
             FAQs
-          </h4>
+          </h4> */}
           <h1 className='text-[32px] font-medium text-[#15161c] relative z-10 max-w-[900px] mx-auto'>
-            Your Queries Answered, All in One Place
+            Preguntas Frecuentes.
           </h1>
         </div>
 
