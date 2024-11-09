@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 const Subscribe = () => {
   return (
     <div className='relative bg-[#4438ca] h-auto flex flex-col md:flex-row items-center justify-between p-8 max-w-[1280px] mx-auto xl:rounded-lg my-10 py-16'>
-      <div className='flex flex-col mb-4 md:mb-0'>
+      <div className='flex-1 flex flex-col mb-4 md:mb-0'>
         <h2
           className={cn(
             inter.className,
@@ -19,7 +19,7 @@ const Subscribe = () => {
         </h2>
         <p className='text-white mt-2'>Sign up for our newsletter.</p>
       </div>
-      <form className='flex flex-col md:flex-row items-center w-full md:w-auto'>
+      <form className='flex-1 flex flex-col md:flex-row justify-end items-center w-full md:w-full'>
         <input
           id='email-address'
           name='email'
@@ -27,7 +27,7 @@ const Subscribe = () => {
           autoComplete='email'
           required
           className={cn(
-            'w-full md:max-w-xs h-12 px-4 py-2 focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white focus:border-white rounded-md',
+            'w-full md:max-w-md h-12 px-4 py-2 focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white focus:border-white rounded-md',
             'border-white bg-[#564ccf] text-white mb-4 md:mb-0 border'
           )}
           placeholder='Enter your email'

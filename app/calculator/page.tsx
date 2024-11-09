@@ -32,10 +32,10 @@ const Calculator = () => {
       </div>
 
       <div className='flex flex-col md:flex-row justify-center items-center gap-8 p-4 md:p-8 mb-10'>
-        <div className='bg-secondary shadow-md rounded-lg p-6 w-full md:w-[520px]'>
+        <div className='bg-[#f1f1f1] shadow-md rounded-lg p-6 w-full md:w-[520px]'>
           <form className='space-y-4'>
             <div>
-              <label className='block text-sm font-medium text-white'>
+              <label className='block text-sm font-medium text-black'>
                 Peso
               </label>
               <Input
@@ -45,7 +45,7 @@ const Calculator = () => {
               />
             </div>
             <div>
-              <label className='block text-sm font-medium text-white'>
+              <label className='block text-sm font-medium text-black'>
                 Valor
               </label>
               <Input
@@ -55,7 +55,7 @@ const Calculator = () => {
               />
             </div>
             <div>
-              <label className='block text-sm font-medium text-white'>
+              <label className='block text-sm font-medium text-black'>
                 Ciudad
               </label>
               <Select>
@@ -75,7 +75,7 @@ const Calculator = () => {
               </Select>
             </div>
             <div>
-              <label className='block text-sm font-medium text-white'>
+              <label className='block text-sm font-medium text-black'>
                 Tipo de mercadería
               </label>
               <Select>
@@ -94,20 +94,20 @@ const Calculator = () => {
                 </SelectContent>
               </Select>
             </div>
-            <Button type='submit' className='w-full mt-4 bg-white text-black'>
+            <Button type='submit' className='w-full mt-4'>
               Calculate
             </Button>
           </form>
         </div>
-        <div className='bg-secondary shadow-md rounded-lg p-6 w-full md:w-80'>
-          <h2 className='text-xl font-bold text-center text-white mb-4'>
+        <div className='bg-[#f1f1f1] shadow-md rounded-lg p-6 w-full md:w-80'>
+          <h2 className='text-xl font-bold text-center text-black mb-4'>
             Resumen para cliente
           </h2>
           <ul className='space-y-2'>
             {resumenItems.map((item, index) => (
               <li
                 key={index}
-                className={`flex justify-between border-b text-white ${
+                className={`flex justify-between border-b text-black ${
                   index === 0 ? 'pt-0' : 'pt-4'
                 }`}
               >

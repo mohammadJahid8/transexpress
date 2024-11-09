@@ -1,7 +1,7 @@
 'use client';
 import ServiceOverview from '@/components/global/service-overview';
 import { cn } from '@/lib/utils';
-import { ArrowRightIcon } from 'lucide-react';
+import { ArrowRightIcon, Building2, HardHat, Wrench } from 'lucide-react';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
@@ -11,30 +11,174 @@ const services = [
     image: '/mission.svg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis',
+    overview: {
+      description:
+        "Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing. Richard Clintock a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.",
+      card: [
+        {
+          icon: <Wrench className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Full Principal Contractor service',
+          description: 'There are many passages of lorem ipsum available',
+        },
+        {
+          icon: <HardHat className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Full-time Onsite Supervision',
+          description: 'There are many passages of lorem ipsum available',
+        },
+        {
+          icon: <Building2 className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Timber and steel frame construction',
+          description: 'There are many passages of lorem ipsum available',
+        },
+      ],
+      message: {
+        name: 'Aleesha brown',
+        position: 'CEO, Company Name',
+        description:
+          'Tortor posuere ac ut consequat tellusi elem isis etum sag ittis vitae atleo duis ut diam odio ut sem nulla phar. Purus sit ame nus mas highly efficient solution whereas open-source application.',
+      },
+    },
   },
   {
     title: 'Property Maintenance',
     image: '/mission.svg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis',
+    overview: {
+      description:
+        "Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing. ",
+      card: [
+        {
+          icon: <Wrench className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Property Maintenance & Repair',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+          icon: <HardHat className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Painting & Decorating',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+          icon: <Building2 className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Plumbing & Heating',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+      ],
+      message: {
+        name: 'Aleesha brown',
+        position: 'CEO, Company Name',
+        description:
+          'Tortor posuere ac ut consequat tellusi elem isis etum sag ittis vitae atleo duis ut diam odio ut sem nulla phar. Purus sit ame nus mas highly efficient solution whereas open-source application.',
+      },
+    },
   },
   {
     title: 'Project Management',
     image: '/mission.svg',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis',
+    overview: {
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis ',
+      card: [
+        {
+          icon: <Wrench className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Project Management',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+          icon: <HardHat className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Project Management',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+          icon: <Building2 className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Project Management',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+      ],
+      message: {
+        name: 'Aleesha brown',
+        position: 'CEO, Company Name',
+        description:
+          'Tortor posuere ac ut consequat tellusi elem isis etum sag ittis vitae atleo duis ut diam odio ut sem nulla phar. Purus sit ame nus mas highly efficient solution whereas open-source application.',
+      },
+    },
   },
   {
     title: 'Renovation & Remodeling',
     image: '/mission.svg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis',
+    overview: {
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattisLorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis ',
+      card: [
+        {
+          icon: <Wrench className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Renovation & Remodeling',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+          icon: <HardHat className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Kitchen & Bathroom Remodeling',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+          icon: <Building2 className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Painting & Flooring',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+      ],
+      message: {
+        name: 'Aleesha brown',
+        position: 'CEO, Company Name',
+        description:
+          'Tortor posuere ac ut consequat tellusi elem isis etum sag ittis vitae atleo duis ut diam odio ut sem nulla phar. Purus sit ame nus mas highly efficient solution whereas open-source application.',
+      },
+    },
   },
   {
     title: 'Preconstruction',
     image: '/mission.svg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis',
+    overview: {
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis',
+      card: [
+        {
+          icon: <Wrench className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Preconstruction',
+          description: 'There are many passages of lorem ipsum available',
+        },
+        {
+          icon: <HardHat className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Preconstruction',
+          description: 'There are many passages of lorem ipsum available',
+        },
+        {
+          icon: <Building2 className='w-12 h-12 text-secondary mb-4' />,
+          title: 'Preconstruction',
+          description: 'There are many passages of lorem ipsum available',
+        },
+      ],
+      message: {
+        name: 'Aleesha brown',
+        position: 'CEO, Company Name',
+        description:
+          'Tortor posuere ac ut consequat tellusi elem isis etum sag ittis vitae atleo duis ut diam odio ut sem nulla phar. Purus sit ame nus mas highly efficient solution whereas open-source application.',
+      },
+    },
   },
 ];
 
@@ -69,7 +213,7 @@ const ServicePage = () => {
           ))}
         </div>
 
-        <div className='flex items-center flex-col lg:flex-row gap-7 flex-1 h-max py-3 sm:py-3.5 rounded-md'>
+        <div className='flex items-start flex-col lg:flex-row gap-7 flex-1 h-max py-3 sm:py-3.5 rounded-md'>
           <Image
             src={services[active].image}
             alt={services[active].title}
@@ -90,7 +234,7 @@ const ServicePage = () => {
         </div>
       </div>
 
-      <ServiceOverview />
+      <ServiceOverview overview={services[active].overview} />
     </div>
   );
 };

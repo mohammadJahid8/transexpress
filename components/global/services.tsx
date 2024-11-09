@@ -30,14 +30,6 @@ const Services = () => {
 
   return (
     <div className='text-center px-4 lg:px-0 py-20 my-0 lg:my-20 bg-gray-100'>
-      {/* <h4
-        className={cn(
-          'text-sm text-primary inline-flex gap-2 items-center uppercase font-semibold relative z-10'
-        )}
-      >
-        <img src='/subtitle.svg' alt='Fast Forward' />
-        Services
-      </h4> */}
       <h1 className='text-[32px] font-medium text-[#15161c] relative z-10 max-w-[900px] mx-auto'>
         Estos son algunos de los servicios que te brindamos
       </h1>
